@@ -1,3 +1,9 @@
+import { OceanHero } from '@/components/ocean-hero';
+
 export default function Home() {
-  return <></>;
+  return (
+    <div className="relative">
+      <OceanHero />
+    </div>
+  );
 }
