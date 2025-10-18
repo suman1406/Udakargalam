@@ -19,7 +19,9 @@ export function PdfCard({ pdf }: PdfCardProps) {
     return null;
   }
   
-  const [width, height] = placeholder.imageUrl.split('/').slice(-2).map(Number);
+  const imageUrl = new URL(placeholder.imageUrl);
+  const width = parseInt(imageUrl.searchParams.get('w') || '1080', 10);
+  const height = width / (400 / 565); // Maintain aspect ratio from original code
 
   return (
     <a href={pdf.file} target="_blank" rel="noopener noreferrer" className="block group">
