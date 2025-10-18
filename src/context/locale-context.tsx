@@ -30,20 +30,18 @@ export function LocaleProvider({ children }: { children: ReactNode }) {
     }
   }, []);
 
+  useEffect(() => {
+    if (isMounted) {
+      document.documentElement.lang = locale;
+    }
+  }, [locale, isMounted]);
+
   const setLocale = useCallback((newLocale: Locale) => {
     setLocaleState(newLocale);
     if (typeof window !== 'undefined') {
       localStorage.setItem('locale', newLocale);
-      document.documentElement.lang = newLocale;
     }
   }, []);
-  
-  // Set initial lang attribute
-  useEffect(() => {
-    if(isMounted) {
-      document.documentElement.lang = locale;
-    }
-  }, [locale, isMounted]);
 
   const value = useMemo(() => ({
     locale,
@@ -52,7 +50,14 @@ export function LocaleProvider({ children }: { children: ReactNode }) {
   }), [locale, setLocale]);
   
   if (!isMounted) {
-    return null; // or a loading component
+    // Render with default locale ('sa') on the server and initial client render
+    // to prevent hydration mismatch. The correct locale will be set after mounting.
+    const serverValue = {
+      locale: 'sa' as Locale,
+      setLocale: () => {}, // no-op on server
+      translations: translations['sa'],
+    };
+    return <LocaleContext.Provider value={serverValue}>{children}</LocaleContext.Provider>;
   }
 
   return <LocaleContext.Provider value={value}>{children}</LocaleContext.Provider>;
