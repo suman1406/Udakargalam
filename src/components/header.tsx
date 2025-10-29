@@ -44,9 +44,9 @@ export function Header() {
       )}
     >
       <div className="container mx-auto flex max-w-7xl items-center justify-between px-4">
-        <Link href="/" className="flex items-center space-x-2">
+        <Link href="/" className="flex items-center space-x-2" title={t('siteTitleFull')}>
           <h1 className="font-headline text-xl font-bold tracking-tight text-primary transition-colors hover:text-accent sm:text-2xl">
-            {t('siteTitleFull')}
+            {t('siteTitle')}
           </h1>
         </Link>
 
