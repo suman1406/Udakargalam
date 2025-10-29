@@ -93,13 +93,13 @@ export function Header() {
               key={href}
               href={href}
               className={cn(
-                "group inline-flex flex-col items-center justify-center px-5 hover:bg-secondary",
+                "group inline-flex flex-col items-center justify-center px-2 text-center hover:bg-secondary",
                 isActive ? "text-accent" : "text-primary"
               )}
               aria-label={label}
             >
               <Icon className="mb-1 h-5 w-5" />
-              <span className="text-[10px] font-medium transition-all group-hover:text-accent">
+              <span className="text-[10px] font-medium leading-tight transition-all group-hover:text-accent">
                 {label}
               </span>
             </Link>
