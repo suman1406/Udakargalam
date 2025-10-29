@@ -3,44 +3,44 @@
     {
       "id": "pdf-thumb-1",
       "description": "Sanskrit PDF thumbnail",
-      "imageUrl": "https://images.unsplash.com/photo-1634337036203-c7d14d275826?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxzY3JpcHQlMjB0ZXh0fGVufDB8fHx8MTc2MDgwMTA3Nnww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "ancient manuscript"
+      "imageUrl": "https://images.unsplash.com/photo-1552083375-1447ce886485?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzYW5kJTIwZHVuZXN8ZW58MHx8fHwxNzYwODQyMjM5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "sand dunes"
     },
     {
       "id": "pdf-thumb-2",
       "description": "Hindi PDF thumbnail",
-      "imageUrl": "https://images.unsplash.com/photo-1589998059171-988d887df646?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxib29rfGVufDB8fHx8MTc2MDgzNTQzNXww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "open book"
+      "imageUrl": "https://images.unsplash.com/photo-1509233725247-49e657c54213?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjYWxtJTIwb2NlYW58ZW58MHx8fHwxNzYwODQyMzQ4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "calm ocean"
     },
     {
       "id": "pdf-thumb-3",
       "description": "English PDF thumbnail",
-      "imageUrl": "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxyZXNlYXJjaCUyMHBhcGVyfGVufDB8fHx8MTc2MDc1NDk0M3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "research paper"
+      "imageUrl": "https://images.unsplash.com/photo-1542262868-a9c43e49a1f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxiZWFjaCUyMHN1bnNldHxlbnwwfHx8fDE3NjA4NDIzNzR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "beach sunset"
     },
     {
       "id": "pdf-thumb-4",
       "description": "Kannada PDF thumbnail",
-      "imageUrl": "https://images.unsplash.com/photo-1532012197267-da84d127e765?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxsaWJyYXJ5fGVufDB8fHx8MTc2MDgzNTUxNnww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "library books"
+      "imageUrl": "https://images.unsplash.com/photo-1515404929826-76fff97a062f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjb3JhbCUyMHJlZWZ8ZW58MHx8fHwxNzYwODQyNDA3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "coral reef"
     },
     {
       "id": "pdf-thumb-5",
       "description": "Marathi PDF thumbnail",
-      "imageUrl": "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxsaWJyYXJ5fGVufDB8fHx8MTc2MDgzNTUxNnww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "book stack"
+      "imageUrl": "https://images.unsplash.com/photo-1439405326854-014607f694d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxvY2VhbnxlbnwwfHx8fDE3NjA4NDI0NDF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "ocean wave"
     },
     {
       "id": "pdf-thumb-6",
       "description": "Bengali PDF thumbnail",
-      "imageUrl": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxsaWJyYXJ5fGVufDB8fHx8MTc2MDgzNTUxNnww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "reading book"
+      "imageUrl": "https://images.unsplash.com/photo-1562911791-c9a17b88432a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzaGVsbHN8ZW58MHx8fHwxNzYwODQyNDY3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "sea shells"
     },
     {
       "id": "pdf-thumb-7",
       "description": "Malayalam PDF thumbnail",
-      "imageUrl": "https://images.unsplash.com/photo-1598035305555-99d7be61509b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxwYWxtJTIwbGVhZnxlbnwwfHx8fDE3NjA4MDEwNzZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "palm leaf"
+      "imageUrl": "https://images.unsplash.com/photo-1484278786775-527ac0d0b608?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwYWxtJTIwdHJlZSUyMGJlYWNofGVufDB8fHx8fDE3NjA4NDI0OTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "palm tree"
     }
   ]
 }
