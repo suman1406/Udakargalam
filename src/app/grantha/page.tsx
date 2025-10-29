@@ -14,10 +14,7 @@ export default function GranthaPage() {
         {t('pages.grantha.title')}
       </h1>
       <div
-        className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
-        style={{
-            ['--masonry-cols' as any]: 4,
-        }}
+        className="gap-6 space-y-6 sm:columns-2 lg:columns-3 xl:columns-4"
       >
         {pdfs.map((pdf) => (
           <div key={pdf.id} className="break-inside-avoid">
