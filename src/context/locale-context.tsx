@@ -19,7 +19,7 @@ export const LocaleContext = createContext<LocaleContextType | undefined>(undefi
 const translations = { en, sa };
 
 export function LocaleProvider({ children }: { children: ReactNode }) {
-  const [locale, setLocaleState] = useState<Locale>('sa');
+  const [locale, setLocaleState] = useState<Locale>('en');
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
@@ -50,12 +50,12 @@ export function LocaleProvider({ children }: { children: ReactNode }) {
   }), [locale, setLocale]);
   
   if (!isMounted) {
-    // Render with default locale ('sa') on the server and initial client render
+    // Render with default locale ('en') on the server and initial client render
     // to prevent hydration mismatch. The correct locale will be set after mounting.
     const serverValue = {
-      locale: 'sa' as Locale,
+      locale: 'en' as Locale,
       setLocale: () => {}, // no-op on server
-      translations: translations['sa'],
+      translations: translations['en'],
     };
     return <LocaleContext.Provider value={serverValue}>{children}</LocaleContext.Provider>;
   }
