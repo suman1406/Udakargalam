@@ -1,6 +1,5 @@
 # UDAKARGALAM / उदकार्गलम्
 
-
 **Default locale = Sanskrit; replace `/src/locales/sa.json` and `/src/locales/en.json` with real content.**
 
 ## Table of Contents
