@@ -28,7 +28,7 @@ export function OceanHero() {
           className="h-full w-full object-cover motion-reduce:hidden"
           aria-hidden="true"
         >
-          <source src="/media/ocean.mp4" type="video/mp4" />
+          <source src="/media/video.mp4" type="video/mp4" />
         </video>
       </div>
 
