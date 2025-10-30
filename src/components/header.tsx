@@ -3,6 +3,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { BookOpen, FileText, Home, Info, Newspaper } from 'lucide-react';
 import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
@@ -45,7 +46,14 @@ export function Header() {
         )}
       >
         <div className="container mx-auto flex max-w-7xl items-center justify-between px-4">
-          <Link href="/" className="flex items-center space-x-2" title={t('siteTitleFull')}>
+          <Link href="/" className="flex items-center space-x-3" title={t('siteTitleFull')}>
+            <Image
+              src="/media/logo.jpg"
+              alt={t('siteTitle')}
+              width={40}
+              height={40}
+              className="rounded-full"
+            />
             <h1 className="font-headline text-xl font-bold tracking-tight text-primary transition-colors hover:text-accent sm:text-2xl">
               {t('siteTitle')}
             </h1>
@@ -86,8 +94,8 @@ export function Header() {
       </header>
       
       {/* Mobile Bottom Nav */}
-      <div className="md:hidden">
-        <nav className="fixed bottom-0 left-0 z-50 w-full border-t bg-background/95 backdrop-blur-sm">
+      <div className="fixed bottom-0 left-0 z-50 w-full md:hidden">
+        <nav className="border-t bg-background/95 backdrop-blur-sm">
           <div className="mx-auto grid h-16 max-w-lg grid-cols-5 font-medium">
             {navItems.map(({ href, icon: Icon, label }) => {
               const isActive = (href === '/' && pathname === '/') || (href !== '/' && pathname.startsWith(href));
