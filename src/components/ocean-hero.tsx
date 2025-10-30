@@ -3,6 +3,7 @@
 
 import { useLocale } from '@/hooks/use-locale';
 import { cn } from '@/lib/utils';
+import Image from 'next/image';
 
 export function OceanHero() {
   const { t } = useLocale();
@@ -33,7 +34,15 @@ export function OceanHero() {
 
       <div className="absolute inset-0 z-10 bg-black/30"></div>
 
-      <div className="relative z-20 text-center">
+      <div className="relative z-20 flex flex-col items-center text-center">
+        <Image
+          src="/media/logo.jpg"
+          alt="Udakargalam Logo"
+          width={150}
+          height={150}
+          className="mb-4 rounded-full"
+          priority
+        />
         <h1
           className={cn(
             'font-headline text-5xl font-bold text-white drop-shadow-lg md:text-7xl lg:text-8xl',
