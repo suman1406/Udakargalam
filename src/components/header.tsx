@@ -52,7 +52,6 @@ export function Header() {
               alt={t('siteTitle')}
               width={40}
               height={40}
-              className="rounded-full"
             />
             <h1 className="font-headline text-xl font-bold tracking-tight text-primary transition-colors hover:text-accent sm:text-2xl">
               {t('siteTitle')}
