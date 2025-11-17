@@ -32,13 +32,13 @@
     }
   },
   "pdfs": {
-    "samskrita": { "label": "Samskrita / संस्कृतम्", "description": "Ocean waves on a sandy beach." },
-    "hindi": { "label": "Hindi / हिन्दि", "description": "Ancient manuscript with Hindi script." },
-    "english": { "label": "English / आङ्ग्लम्", "description": "An old book with English text." },
-    "kannada": { "label": "Kannada / कन्नड", "description": "Palm leaf manuscript with Kannada writing." },
-    "marathi": { "label": "Marathi / मराठी", "description": "A traditional Marathi scroll." },
-    "bengali": { "label": "Bengali / बेङ्गालि", "description": "Ornate Bengali calligraphy." },
-    "malayalam": { "label": "Malayalam / मलयालम्", "description": "A book with Malayalam script." }
+    "samskrita": { "label": "Samskrita", "description": "Ocean waves on a sandy beach." },
+    "hindi": { "label": "Hindi", "description": "Ancient manuscript with Hindi script." },
+    "english": { "label": "English", "description": "An old book with English text." },
+    "kannada": { "label": "Kannada", "description": "Palm leaf manuscript with Kannada writing." },
+    "marathi": { "label": "Marathi", "description": "A traditional Marathi scroll." },
+    "bengali": { "label": "Bengali", "description": "Ornate Bengali calligraphy." },
+    "malayalam": { "label": "Malayalam", "description": "A book with Malayalam script." }
   },
   "languageToggle": {
     "sanskrit": "Sanskrit",
