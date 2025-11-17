@@ -23,13 +23,19 @@ export function PdfCard({ pdf }: PdfCardProps) {
   const width = 500;
   const height = 700; // An example height, aspect ratio will be preserved.
 
+  // If pdf.file is a Google Drive share link, try to derive a thumbnail URL from the file id.
+  const driveFileIdMatch = typeof pdf.file === 'string' ? pdf.file.match(/\/d\/([a-zA-Z0-9_-]{10,})\//) : null;
+  const driveThumbnail = driveFileIdMatch ? `https://drive.google.com/thumbnail?id=${driveFileIdMatch[1]}&sz=w1080-h720` : null;
+
+  const imgSrc = driveThumbnail ?? placeholder.imageUrl;
+
   return (
     <a href={pdf.file} target="_blank" rel="noopener noreferrer" className="block group">
       <Card className="h-full overflow-hidden transition-all duration-300 ease-in-out group-hover:shadow-xl group-hover:-translate-y-2 bg-card/80 backdrop-blur-sm">
         <CardHeader className="p-0">
           <div className="relative w-full overflow-hidden">
             <Image
-              src={placeholder.imageUrl}
+              src={imgSrc}
               alt={`${t(`pdfs.${pdf.localeKey}.label`)} PDF Thumbnail`}
               data-ai-hint={placeholder.imageHint}
               width={width}
