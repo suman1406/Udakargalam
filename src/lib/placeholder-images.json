@@ -3,43 +3,43 @@
     {
       "id": "pdf-thumb-1",
       "description": "Sanskrit PDF thumbnail",
-      "imageUrl": "https://images.unsplash.com/photo-1552083375-1447ce886485?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzYW5kJTIwZHVuZXN8ZW58MHx8fHwxNzYwODQyMjM5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://t3.ftcdn.net/jpg/15/36/86/30/240_F_1536863049_P29b1SG3dOWTnypCtj93m3DOkNTzWHTA.jpg",
       "imageHint": "sand dunes"
     },
     {
       "id": "pdf-thumb-2",
       "description": "Hindi PDF thumbnail",
-      "imageUrl": "https://images.unsplash.com/photo-1509233725247-49e657c54213?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjYWxtJTIwb2NlYW58ZW58MHx8fHwxNzYwODQyMzQ4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXSo2JH1oLEgk25dueT-ZbHdIGViNN3eoo2Q&s",
       "imageHint": "calm ocean"
     },
     {
       "id": "pdf-thumb-3",
       "description": "English PDF thumbnail",
-      "imageUrl": "https://images.unsplash.com/photo-1542262868-a9c43e49a1f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxiZWFjaCUyMHN1bnNldHxlbnwwfHx8fDE3NjA4NDIzNzR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/1295570/71660_727464.jpeg",
       "imageHint": "beach sunset"
     },
     {
       "id": "pdf-thumb-4",
       "description": "Kannada PDF thumbnail",
-      "imageUrl": "https://images.unsplash.com/photo-1515404929826-76fff97a062f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjb3JhbCUyMHJlZWZ8ZW58MHx8fHwxNzYwODQyNDA3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYuljisQ_COYAAf8lY78OxNCmwvioxqrDjRA&s",
       "imageHint": "coral reef"
     },
     {
       "id": "pdf-thumb-5",
       "description": "Marathi PDF thumbnail",
-      "imageUrl": "https://images.unsplash.com/photo-1439405326854-014607f694d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxvY2VhbnxlbnwwfHx8fDE3NjA4NDI0NDF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://www.indiaart.com/Paintings/24576/large/27369.jpg.ashx?height=350",
       "imageHint": "ocean wave"
     },
     {
       "id": "pdf-thumb-6",
       "description": "Bengali PDF thumbnail",
-      "imageUrl": "https://images.unsplash.com/photo-1562911791-c9a17b88432a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzaGVsbHN8ZW58MHx8fHwxNzYwODQyNDY3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThSkO72gWHedXAuEN6LrRz_kY5j1Nsqwt_3w&s",
       "imageHint": "sea shells"
     },
     {
       "id": "pdf-thumb-7",
       "description": "Malayalam PDF thumbnail",
-      "imageUrl": "https://images.unsplash.com/photo-1484278786775-527ac0d0b608?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwYWxtJTIwdHJlZSUyMGJlYWNofGVufDB8fHx8fDE3NjA4NDI0OTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkOiOHmXo_DbGuKI1eBbSrhhnQv3WHplwaTg&s",
       "imageHint": "palm tree"
     }
   ]
