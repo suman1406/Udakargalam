@@ -50,10 +50,11 @@ export function Header() {
             <Image
               src="/media/logo.jpg"
               alt={t('siteTitle')}
-              width={40}
-              height={40}
+              width={64}
+              height={64}
+              className="rounded"
             />
-            <h1 className="font-headline text-xl font-bold tracking-tight text-primary transition-colors hover:text-accent sm:text-2xl">
+            <h1 className="font-headline text-2xl font-bold tracking-tight text-primary transition-colors hover:text-accent sm:text-3xl">
               {t('siteTitle')}
             </h1>
           </Link>
