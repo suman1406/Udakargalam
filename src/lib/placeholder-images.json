@@ -3,43 +3,43 @@
     {
       "id": "pdf-thumb-1",
       "description": "Sanskrit PDF thumbnail",
-      "imageUrl": "https://t3.ftcdn.net/jpg/15/36/86/30/240_F_1536863049_P29b1SG3dOWTnypCtj93m3DOkNTzWHTA.jpg",
+      "imageUrl": "/media/samskrita.jpeg",
       "imageHint": "sand dunes"
     },
     {
       "id": "pdf-thumb-2",
       "description": "Hindi PDF thumbnail",
-      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXSo2JH1oLEgk25dueT-ZbHdIGViNN3eoo2Q&s",
+      "imageUrl": "/media/hindi.jpeg",
       "imageHint": "calm ocean"
     },
     {
       "id": "pdf-thumb-3",
       "description": "English PDF thumbnail",
-      "imageUrl": "https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/1295570/71660_727464.jpeg",
+      "imageUrl": "/media/english.jpeg",
       "imageHint": "beach sunset"
     },
     {
       "id": "pdf-thumb-4",
       "description": "Kannada PDF thumbnail",
-      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYuljisQ_COYAAf8lY78OxNCmwvioxqrDjRA&s",
+      "imageUrl": "/media/kannada.jpeg",
       "imageHint": "coral reef"
     },
     {
       "id": "pdf-thumb-5",
       "description": "Marathi PDF thumbnail",
-      "imageUrl": "https://www.indiaart.com/Paintings/24576/large/27369.jpg.ashx?height=350",
+      "imageUrl": "/media/marathi.jpeg",
       "imageHint": "ocean wave"
     },
     {
       "id": "pdf-thumb-6",
       "description": "Bengali PDF thumbnail",
-      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThSkO72gWHedXAuEN6LrRz_kY5j1Nsqwt_3w&s",
+      "imageUrl": "/media/bengali.jpeg",
       "imageHint": "sea shells"
     },
     {
       "id": "pdf-thumb-7",
       "description": "Malayalam PDF thumbnail",
-      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkOiOHmXo_DbGuKI1eBbSrhhnQv3WHplwaTg&s",
+      "imageUrl": "/media/malayalam.jpeg",
       "imageHint": "palm tree"
     }
   ]
