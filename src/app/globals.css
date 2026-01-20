@@ -17,8 +17,8 @@ body {
     --popover: 25 56% 96%;
     --popover-foreground: 215 28% 17%;
 
-    --primary: 205 47% 42%; /* #3B82A6 - Muted Ocean Blue */
-    --primary-foreground: 25 56% 96%;
+    --primary: 338 89% 40%; /* #c20b4d - Crimson Magenta */
+    --primary-foreground: 0 0% 100%;
 
     --secondary: 210 20% 90%;
     --secondary-foreground: 215 28% 17%;
@@ -34,7 +34,7 @@ body {
 
     --border: 210 20% 85%;
     --input: 210 20% 85%;
-    --ring: 205 47% 42%;
+    --ring: 338 89% 40%;
     
     --radius: 0.5rem;
 
@@ -58,8 +58,8 @@ body {
     --popover: 220 39% 10%;
     --popover-foreground: 210 29% 90%;
     
-    --primary: 205 47% 72%; /* #8BBDD9 - Light Ocean Blue */
-    --primary-foreground: 220 39% 10%;
+    --primary: 338 89% 65%; /* Lighter Crimson Magenta for dark mode */
+    --primary-foreground: 0 0% 100%;
 
     --secondary: 220 20% 15%;
     --secondary-foreground: 210 29% 90%;
@@ -75,7 +75,7 @@ body {
 
     --border: 220 20% 20%;
     --input: 220 20% 20%;
-    --ring: 205 47% 72%;
+    --ring: 338 89% 65%;
 
     --chart-1: 220 70% 50%;
     --chart-2: 160 60% 45%;

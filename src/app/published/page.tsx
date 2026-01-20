@@ -1,26 +1,22 @@
 
 'use client';
 
-import { useLocale } from '@/hooks/use-locale';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { articles } from '@/lib/articles-data';
+import { ArticleCard } from '@/components/article-card';
 
 export default function PublishedPage() {
-  const { t } = useLocale();
-
   return (
-    <div className="container mx-auto max-w-4xl px-4 py-8 md:py-16">
-      <Card className="bg-card/80 backdrop-blur-sm">
-        <CardHeader>
-          <CardTitle className="font-headline text-3xl md:text-4xl">
-            {t('pages.published.title')}
-          </CardTitle>
-        </CardHeader>
-        <CardContent>
-          <p className="text-lg leading-relaxed text-foreground/80">
-            {t('pages.published.content')}
-          </p>
-        </CardContent>
-      </Card>
+    <div className="container mx-auto max-w-7xl px-4 py-8 md:py-16">
+      <h1 className="mb-8 text-center font-headline text-4xl font-bold md:text-5xl">
+        Published Articles
+      </h1>
+      <div className="gap-6 space-y-6 sm:columns-2 lg:columns-3 xl:columns-4">
+        {articles.map((article) => (
+          <div key={article.id} className="break-inside-avoid">
+            <ArticleCard article={article} />
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
