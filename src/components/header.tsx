@@ -41,8 +41,8 @@ export function Header() {
     <>
       <header
         className={cn(
-          'sticky top-0 z-50 flex h-20 items-center transition-all duration-300',
-          isScrolled ? 'bg-background/80 shadow-md backdrop-blur-sm' : 'bg-transparent'
+          'sticky top-0 z-50 flex h-20 items-center transition-all duration-300 bg-[hsl(var(--header-bg))] text-[hsl(var(--header-foreground))]',
+          isScrolled ? 'shadow-md' : ''
         )}
       >
         <div className="container mx-auto flex max-w-7xl items-center justify-between px-4">
@@ -54,14 +54,14 @@ export function Header() {
               height={64}
               className="rounded"
             />
-            <h1 className="font-headline text-2xl font-bold tracking-tight text-primary transition-colors hover:text-accent sm:text-3xl">
+            <h1 className="font-headline text-2xl font-bold tracking-tight text-white transition-colors hover:text-white/80 sm:text-3xl">
               {t('siteTitle')}
             </h1>
           </Link>
 
           <div className="flex items-center space-x-2 md:space-x-4">
             <TooltipProvider>
-              <nav className="hidden items-center space-x-2 rounded-full border bg-secondary/50 p-1 md:flex">
+              <nav className="hidden items-center space-x-2 rounded-full border border-white/20 bg-white/10 p-1 md:flex">
                 {navItems.map(({ href, icon: Icon, label }) => {
                   // The home icon is only for mobile
                   if (href === '/') return null;
@@ -72,8 +72,8 @@ export function Header() {
                         <Link
                           href={href}
                           className={cn(
-                            'flex h-9 w-9 items-center justify-center rounded-full text-primary transition-colors hover:bg-background hover:text-accent',
-                            isActive ? 'bg-background shadow-sm' : ''
+                            'flex h-9 w-9 items-center justify-center rounded-full text-white transition-colors hover:bg-white/20',
+                            isActive ? 'bg-white/20 shadow-sm' : ''
                           )}
                           aria-label={label}
                         >
@@ -92,7 +92,7 @@ export function Header() {
           </div>
         </div>
       </header>
-      
+
       {/* Mobile Bottom Nav */}
       <div className="fixed bottom-0 left-0 z-50 w-full md:hidden">
         <nav className="border-t bg-background/95 backdrop-blur-sm">
@@ -100,21 +100,22 @@ export function Header() {
             {navItems.map(({ href, icon: Icon, label }) => {
               const isActive = (href === '/' && pathname === '/') || (href !== '/' && pathname.startsWith(href));
               return (
-              <Link
-                key={href}
-                href={href}
-                className={cn(
-                  "group inline-flex flex-col items-center justify-center px-1 text-center hover:bg-secondary",
-                  isActive ? "text-accent" : "text-primary"
-                )}
-                aria-label={label}
-              >
-                <Icon className="mb-1 h-5 w-5" />
-                <span className="text-[10px] font-medium leading-tight transition-all group-hover:text-accent">
-                  {label}
-                </span>
-              </Link>
-            )})}
+                <Link
+                  key={href}
+                  href={href}
+                  className={cn(
+                    "group inline-flex flex-col items-center justify-center px-1 text-center hover:bg-secondary",
+                    isActive ? "text-accent" : "text-primary"
+                  )}
+                  aria-label={label}
+                >
+                  <Icon className="mb-1 h-5 w-5" />
+                  <span className="text-[10px] font-medium leading-tight transition-all group-hover:text-accent">
+                    {label}
+                  </span>
+                </Link>
+              )
+            })}
           </div>
         </nav>
       </div>
