@@ -1,4 +1,3 @@
-
 {
   "siteTitle": "UDAKARGALAM",
   "siteTitleFull": "UDAKARGALAM / उदकार्गलम्",
@@ -23,7 +22,7 @@
       "title": "Grantha"
     },
     "published": {
-      "title": "Published papers",
+      "title": "Published Articles",
       "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     },
     "about": {
@@ -32,13 +31,34 @@
     }
   },
   "pdfs": {
-    "samskrita": { "label": "Samskrita", "description": "Ocean waves on a sandy beach." },
-    "hindi": { "label": "Hindi", "description": "Ancient manuscript with Hindi script." },
-    "english": { "label": "English", "description": "An old book with English text." },
-    "kannada": { "label": "Kannada", "description": "Palm leaf manuscript with Kannada writing." },
-    "marathi": { "label": "Marathi", "description": "A traditional Marathi scroll." },
-    "bengali": { "label": "Bengali", "description": "Ornate Bengali calligraphy." },
-    "malayalam": { "label": "Malayalam", "description": "A book with Malayalam script." }
+    "samskrita": {
+      "label": "Samskrita",
+      "description": "Ocean waves on a sandy beach."
+    },
+    "hindi": {
+      "label": "Hindi",
+      "description": "Ancient manuscript with Hindi script."
+    },
+    "english": {
+      "label": "English",
+      "description": "An old book with English text."
+    },
+    "kannada": {
+      "label": "Kannada",
+      "description": "Palm leaf manuscript with Kannada writing."
+    },
+    "marathi": {
+      "label": "Marathi",
+      "description": "A traditional Marathi scroll."
+    },
+    "bengali": {
+      "label": "Bengali",
+      "description": "Ornate Bengali calligraphy."
+    },
+    "malayalam": {
+      "label": "Malayalam",
+      "description": "A book with Malayalam script."
+    }
   },
   "languageToggle": {
     "sanskrit": "Sanskrit",
