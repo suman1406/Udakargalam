@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import type { ArticleInfo } from '@/lib/articles-data';
 
 interface ArticleCardProps {
@@ -28,7 +28,7 @@ export function ArticleCard({ article }: ArticleCardProps) {
                 </CardHeader>
                 <CardContent className="p-4">
                     <CardTitle className="font-headline text-lg">{article.title}</CardTitle>
-                    <CardDescription className="mt-1 text-sm">{article.description}</CardDescription>
+
                 </CardContent>
             </Card>
         </a>

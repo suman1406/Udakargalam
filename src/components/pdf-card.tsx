@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import type { PdfInfo } from '@/lib/pdf-data';
 import { useLocale } from '@/hooks/use-locale';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 interface PdfCardProps {
   pdf: PdfInfo;
@@ -18,7 +18,7 @@ export function PdfCard({ pdf }: PdfCardProps) {
   if (!placeholder) {
     return null;
   }
-  
+
   // Use a fixed width and let height be auto-adjusted by the image component for responsiveness.
   const width = 500;
   const height = 700; // An example height, aspect ratio will be preserved.
@@ -45,7 +45,7 @@ export function PdfCard({ pdf }: PdfCardProps) {
         </CardHeader>
         <CardContent className="p-4">
           <CardTitle className="font-headline text-lg">{t(`pdfs.${pdf.localeKey}.label`)}</CardTitle>
-          <CardDescription className="mt-1 text-sm">{t(`pdfs.${pdf.localeKey}.description`)}</CardDescription>
+
         </CardContent>
       </Card>
     </a>
