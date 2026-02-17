@@ -58,6 +58,10 @@
     "malayalam": {
       "label": "Malayalam",
       "description": "A book with Malayalam script."
+    },
+    "tamil": {
+      "label": "Tamil",
+      "description": "A book with Tamil script."
     }
   },
   "languageToggle": {
