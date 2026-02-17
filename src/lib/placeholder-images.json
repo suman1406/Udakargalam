@@ -41,6 +41,12 @@
       "description": "Malayalam PDF thumbnail",
       "imageUrl": "/media/malayalam.jpeg",
       "imageHint": "palm tree"
+    },
+    {
+      "id": "pdf-thumb-8",
+      "description": "Tamil PDF thumbnail",
+      "imageUrl": "/media/tamil.jpeg",
+      "imageHint": "mountain peak"
     }
   ]
 }
