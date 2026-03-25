@@ -47,6 +47,10 @@
       "label": "Kannada",
       "description": "Palm leaf manuscript with Kannada writing."
     },
+    "lokopakaram": {
+      "label": "Lokopakaram",
+      "description": "Ancient manuscript of Lokopakaram in Kannada."
+    },
     "marathi": {
       "label": "Marathi",
       "description": "A traditional Marathi scroll."

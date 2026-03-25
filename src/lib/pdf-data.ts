@@ -12,8 +12,9 @@ export const pdfs: PdfInfo[] = [
   { id: 'hindi', localeKey: 'hindi', name: 'Hindi— हिन्दि', file: 'https://drive.google.com/file/d/14Rbt-YQ3VXEfrUCo-_EP-mZG_HjdAIm4/view?usp=drive_link', thumbId: 'pdf-thumb-2' },
   { id: 'english', localeKey: 'english', name: 'English— आङ्ग्लम्', file: 'https://drive.google.com/file/d/1-aXiGm6NRbVe1jmEgwWZfOOEUnd1b9iA/view?usp=drive_link', thumbId: 'pdf-thumb-3' },
   { id: 'kannada', localeKey: 'kannada', name: 'Kannada— कन्नड', file: 'https://drive.google.com/file/d/1xQXw4SmQ30HkMqXGUm1qfRIBjZLqCLk9/view?usp=drive_link', thumbId: 'pdf-thumb-4' },
+  { id: 'lokopakaram', localeKey: 'lokopakaram', name: 'Lokopakaram— लोकोपकारम्', file: 'https://drive.google.com/file/d/1yRtyjTuRRYa8ps3eRqb6eoEQ3kWlWWdA/view?usp=sharing', thumbId: 'pdf-thumb-9' },
   { id: 'marathi', localeKey: 'marathi', name: 'Marathi— मराठी', file: 'https://drive.google.com/file/d/1Lrbwf42HXjG2rPCiYKvSKYtjQzgMsDnh/view?usp=drive_link', thumbId: 'pdf-thumb-5' },
   { id: 'bengali', localeKey: 'bengali', name: 'Bengali— बेङ्गालि', file: 'https://drive.google.com/file/d/13sW6HyhGBdqcjYajgmsMa71KNjK8E7wT/view?usp=drive_link', thumbId: 'pdf-thumb-6' },
   { id: 'malayalam', localeKey: 'malayalam', name: 'Malayalam— मलयालम्', file: 'https://drive.google.com/file/d/1pYvicwa9z4ehhW8RT5ZtBImtsRhsGOST/view?usp=drive_link', thumbId: 'pdf-thumb-7' },
-  { id: 'tamil', localeKey: 'tamil', name: 'Tamil— तमिल', file: 'https://drive.google.com/file/d/1aC4u4mSTwXg61k-_69QH50ZOb-6g4QpU/view?usp=drive_link', thumbId: 'pdf-thumb-8' },
+  { id: 'tamil', localeKey: 'tamil', name: 'Tamil- तमिल्', file: 'https://drive.google.com/file/d/1aC4u4mSTwXg61k-_69QH50ZOb-6g4QpU/view?usp=drive_link', thumbId: 'pdf-thumb-8' },
 ];

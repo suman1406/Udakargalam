@@ -47,6 +47,12 @@
       "description": "Tamil PDF thumbnail",
       "imageUrl": "/media/tamil.jpeg",
       "imageHint": "mountain peak"
+    },
+    {
+      "id": "pdf-thumb-9",
+      "description": "Lokopakaram PDF thumbnail",
+      "imageUrl": "/media/lokopakaram_kannada.jpeg",
+      "imageHint": "misty forest"
     }
   ]
 }
