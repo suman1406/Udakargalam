@@ -4,7 +4,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { BookOpen, FileText, Home, Info, Newspaper } from 'lucide-react';
+import { BookOpen, FileText, Grid, Home, Info, Newspaper } from 'lucide-react';
 import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
 import { useLocale } from '@/hooks/use-locale';
@@ -33,6 +33,7 @@ export function Header() {
     { href: '/', icon: Home, label: t('siteTitle') },
     { href: '/dakargaladhyaya', icon: BookOpen, label: t('nav.dakargaladhyaya') },
     { href: '/grantha', icon: FileText, label: t('nav.grantha') },
+    { href: '/miscellaneous', icon: Grid, label: t('nav.miscellaneous') },
     { href: '/published', icon: Newspaper, label: t('nav.published') },
     { href: '/about', icon: Info, label: t('nav.about') },
   ];
@@ -96,7 +97,7 @@ export function Header() {
       {/* Mobile Bottom Nav */}
       <div className="fixed bottom-0 left-0 z-50 w-full md:hidden">
         <nav className="border-t bg-background/95 backdrop-blur-sm">
-          <div className="mx-auto grid h-16 max-w-lg grid-cols-5 font-medium">
+          <div className="mx-auto grid h-16 max-w-lg grid-cols-6 font-medium">
             {navItems.map(({ href, icon: Icon, label }) => {
               const isActive = (href === '/' && pathname === '/') || (href !== '/' && pathname.startsWith(href));
               return (
