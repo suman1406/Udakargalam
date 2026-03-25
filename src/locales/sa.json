@@ -43,7 +43,8 @@
     "lokopakaram": { "label": "लोकोपकारम्", "description": "लोकोपकार कन्नड हस्तलिखितम्।" },
     "marathi": { "label": "मराठी", "description": "एकः पारम्परिकः मराठीलेखः।" },
     "bengali": { "label": "बेङ्गालि", "description": "अलङ्कृतं बङ्गभाषी सुलेखनम्।" },
-    "malayalam": { "label": " मलयालम्", "description": "मलयालमलिप्या सह एकं पुस्तकम्।" }
+    "malayalam": { "label": " मलयालम्", "description": "मलयालमलिप्या सह एकं पुस्तकम्।" },
+    "tamil": { "label": "तमिल्", "description": "तमिललिप्या सह एकं पुस्तकम्।" }
   },
   "languageToggle": {
     "sanskrit": "संस्कृतम्",
