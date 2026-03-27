@@ -8,7 +8,7 @@ export type PdfInfo = {
 };
 
 export const pdfs: PdfInfo[] = [
-  { id: 'samskrita', localeKey: 'samskrita', name: 'Samskrita / संस्कृतम्', file: 'https://drive.google.com/file/d/1KZIrKVLAQzuFlGuqDCaN8i8Z5djJp_4d/view?usp=drive_link', thumbId: 'pdf-thumb-1' },
+  { id: 'samskrita', localeKey: 'samskrita', name: 'Samskrita / संस्कृतम्', file: 'https://drive.google.com/file/d/1HK1-IU567XsZSt70AwTiT7WD47Lqe4vU/view?usp=drive_link', thumbId: 'pdf-thumb-1' },
   { id: 'hindi', localeKey: 'hindi', name: 'Hindi— हिन्दि', file: 'https://drive.google.com/file/d/14Rbt-YQ3VXEfrUCo-_EP-mZG_HjdAIm4/view?usp=drive_link', thumbId: 'pdf-thumb-2' },
   { id: 'english', localeKey: 'english', name: 'English— आङ्ग्लम्', file: 'https://drive.google.com/file/d/1-aXiGm6NRbVe1jmEgwWZfOOEUnd1b9iA/view?usp=drive_link', thumbId: 'pdf-thumb-3' },
   { id: 'kannada', localeKey: 'kannada', name: 'Kannada— कन्नड', file: 'https://drive.google.com/file/d/1xQXw4SmQ30HkMqXGUm1qfRIBjZLqCLk9/view?usp=drive_link', thumbId: 'pdf-thumb-4' },
