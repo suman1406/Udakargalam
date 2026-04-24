@@ -13,9 +13,9 @@ export default function PublishedPage() {
       <h1 className="mb-8 text-center font-headline text-4xl font-bold md:text-5xl">
         {t('pages.published.title')}
       </h1>
-      <div className="gap-6 space-y-6 sm:columns-2 lg:columns-3 xl:columns-4">
+      <div className="grid grid-cols-1 justify-items-center gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {articles.map((article) => (
-          <div key={article.id} className="break-inside-avoid">
+          <div key={article.id} className="w-full max-w-sm">
             <ArticleCard article={article} />
           </div>
         ))}

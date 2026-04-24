@@ -2,6 +2,7 @@ import { OceanHero } from '@/components/ocean-hero';
 import AboutPage from './about/page';
 import DakargaladhyayaPage from './dakargaladhyaya/page';
 import GranthaPage from './grantha/page';
+import MiscellaneousPage from './miscellaneous/page';
 import PublishedPage from './published/page';
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
         <DakargaladhyayaPage />
         <GranthaPage />
         <PublishedPage />
+        <MiscellaneousPage />
         <AboutPage />
       </div>
     </div>

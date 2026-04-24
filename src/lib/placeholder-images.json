@@ -53,6 +53,12 @@
       "description": "Lokopakaram PDF thumbnail",
       "imageUrl": "/media/lokopakaram_kannada.jpeg",
       "imageHint": "misty forest"
+    },
+    {
+      "id": "pdf-thumb-10",
+      "description": "Brhatsamhita Mula Sloka PDF thumbnail",
+      "imageUrl": "https://drive.google.com/thumbnail?id=1ecJ80yle1q1Q60VJk_6b6otEDUaI1glx&sz=w1000",
+      "imageHint": "book cover"
     }
   ]
 }

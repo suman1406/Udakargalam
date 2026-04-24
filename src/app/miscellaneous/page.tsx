@@ -2,25 +2,24 @@
 'use client';
 
 import { useLocale } from '@/hooks/use-locale';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { miscellaneousPdfs } from '@/lib/miscellaneous-data';
+import { PdfCard } from '@/components/pdf-card';
 
 export default function MiscellaneousPage() {
   const { t } = useLocale();
 
   return (
-    <div className="container mx-auto max-w-4xl px-4 py-8 md:py-16">
-      <Card className="bg-card/80 backdrop-blur-sm">
-        <CardHeader>
-          <CardTitle className="font-headline text-3xl md:text-4xl">
-            {t('pages.miscellaneous.title')}
-          </CardTitle>
-        </CardHeader>
-        <CardContent>
-          <p className="text-lg leading-relaxed text-foreground/80">
-            {t('pages.miscellaneous.content')}
-          </p>
-        </CardContent>
-      </Card>
+    <div className="container mx-auto max-w-7xl px-4 py-8 md:py-16">
+      <h1 className="mb-8 text-center font-headline text-4xl font-bold md:text-5xl">
+        {t('pages.miscellaneous.title')}
+      </h1>
+      <div className="grid grid-cols-1 justify-items-center gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        {miscellaneousPdfs.map((pdf) => (
+          <div key={pdf.id} className="w-full max-w-sm">
+            <PdfCard pdf={pdf} />
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

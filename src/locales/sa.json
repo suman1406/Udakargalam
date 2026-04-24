@@ -45,6 +45,7 @@
     "bengali": { "label": "बेङ्गालि", "description": "अलङ्कृतं बङ्गभाषी सुलेखनम्।" },
     "malayalam": { "label": " मलयालम्", "description": "मलयालमलिप्या सह एकं पुस्तकम्।" },
     "tamil": { "label": "तमिल्", "description": "तमिललिप्या सह एकं पुस्तकम्।" }
+    ,"brhatsamhitaMulaSloka": { "label": "मूलश्लोकाः – उदकार्गळाध्यायः", "description": "मूलश्लोकाः – उदकार्गळाध्यायः" }
   },
   "languageToggle": {
     "sanskrit": "संस्कृतम्",

@@ -71,6 +71,10 @@
     "tamil": {
       "label": "Tamil",
       "description": "A book with Tamil script."
+    },
+    "brhatsamhitaMulaSloka": {
+      "label": "Mūlaślokāḥ – Udakārgala-adhyāyaḥ",
+      "description": "Bibliotheca Indica Brhatsamhita Mula sloka edition."
     }
   },
   "languageToggle": {
