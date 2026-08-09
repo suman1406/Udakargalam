@@ -75,6 +75,10 @@
     "brhatsamhitaMulaSloka": {
       "label": "Mūlaślokāḥ – Udakārgala-adhyāyaḥ",
       "description": "Bibliotheca Indica Brhatsamhita Mula sloka edition."
+    },
+    "telugu": {
+      "label": "Telugu",
+      "description": "A book with Telugu script."
     }
   },
   "languageToggle": {

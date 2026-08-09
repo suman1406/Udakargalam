@@ -17,4 +17,5 @@ export const pdfs: PdfInfo[] = [
   { id: 'bengali', localeKey: 'bengali', name: 'Bengali— बेङ्गालि', file: 'https://drive.google.com/file/d/13sW6HyhGBdqcjYajgmsMa71KNjK8E7wT/view?usp=drive_link', thumbId: 'pdf-thumb-6' },
   { id: 'malayalam', localeKey: 'malayalam', name: 'Malayalam— मलयालम्', file: 'https://drive.google.com/file/d/1pYvicwa9z4ehhW8RT5ZtBImtsRhsGOST/view?usp=drive_link', thumbId: 'pdf-thumb-7' },
   { id: 'tamil', localeKey: 'tamil', name: 'Tamil- तमिल्', file: 'https://drive.google.com/file/d/1aC4u4mSTwXg61k-_69QH50ZOb-6g4QpU/view?usp=drive_link', thumbId: 'pdf-thumb-8' },
+  { id: 'telugu', localeKey: 'telugu', name: 'Telugu— तेलुगु', file: 'https://drive.google.com/file/d/1nSO-VLRxZPBpuUD3oEpsOaC4MPji9uW-/view?usp=drive_link', thumbId: 'pdf-thumb-11' },
 ];

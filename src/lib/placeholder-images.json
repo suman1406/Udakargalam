@@ -59,6 +59,12 @@
       "description": "Brhatsamhita Mula Sloka PDF thumbnail",
       "imageUrl": "https://drive.google.com/thumbnail?id=1ecJ80yle1q1Q60VJk_6b6otEDUaI1glx&sz=w1000",
       "imageHint": "book cover"
+    },
+    {
+      "id": "pdf-thumb-11",
+      "description": "Telugu PDF thumbnail",
+      "imageUrl": "/media/telugu.jpeg",
+      "imageHint": "telugu book thumbnail"
     }
   ]
 }
