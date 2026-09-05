@@ -21,7 +21,7 @@ export function ArticleCard({ article }: ArticleCardProps) {
                     <div className="relative w-full overflow-hidden">
                         <Image
                             src={article.imageUrl}
-                            alt={article.title}
+                            alt={`Cover image for ${article.title}`}
                             width={width}
                             height={height}
                             className="object-cover w-full h-auto transition-transform duration-300 group-hover:scale-105"

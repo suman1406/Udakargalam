@@ -35,7 +35,7 @@ export function PdfCard({ pdf }: PdfCardProps) {
           <div className="relative w-full overflow-hidden">
             <Image
               src={imgSrc}
-              alt={`${t(`pdfs.${pdf.localeKey}.label`)} PDF Thumbnail`}
+              alt={t(`pdfs.${pdf.localeKey}.label`)}
               data-ai-hint={placeholder.imageHint}
               width={width}
               height={height}

@@ -9,10 +9,10 @@ export default function Home() {
     <div className="relative">
       <HomeIntroduction />
       <div className="space-y-16 py-16">
-        <section id="grantha"><GranthaPage /></section>
-        <section id="published"><PublishedPage /></section>
-        <section id="miscellaneous"><MiscellaneousPage /></section>
-        <section id="about"><AboutPage /></section>
+        <section id="grantha"><GranthaPage headingLevel="h2" /></section>
+        <section id="published"><PublishedPage headingLevel="h2" /></section>
+        <section id="miscellaneous"><MiscellaneousPage headingLevel="h2" /></section>
+        <section id="about"><AboutPage headingLevel="h2" /></section>
       </div>
     </div>
   );

@@ -6,20 +6,29 @@ import { Toaster } from '@/components/ui/toaster';
 import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
 import { SkipToContentLink } from '@/components/skip-to-content';
-import { HreflangLinks } from '@/components/hreflang-links';
 
 export const metadata: Metadata = {
-  title: 'UDAKARGALAM / उदकार्गलम्',
-  description: 'A research presentation on Udakargalam.',
+  metadataBase: new URL('https://salilargalam.in'),
+  title: {
+    default: 'Dakārgalam | India’s Traditional Knowledge on Groundwater',
+    template: '%s | Dakārgalam',
+  },
+  description: 'A digital research resource on Dakārgalam, groundwater knowledge and the Bṛhatsaṃhitā of Varāhamihira.',
+  alternates: {
+    canonical: '/',
+  },
   openGraph: {
-    title: 'UDAKARGALAM / उदकार्गलम्',
-    description: 'A research presentation on Udakargalam.',
+    title: 'Dakārgalam | India’s Traditional Knowledge on Groundwater',
+    description: 'A digital research resource on Dakārgalam, groundwater knowledge and the Bṛhatsaṃhitā of Varāhamihira.',
+    url: '/',
+    siteName: 'Dakārgalam',
     type: 'website',
+    images: [{ url: '/media/logo.jpg', width: 512, height: 512, alt: 'Dakārgalam' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'UDAKARGALAM / उदकार्गलम्',
-    description: 'A research presentation on Udakargalam.',
+    title: 'Dakārgalam | India’s Traditional Knowledge on Groundwater',
+    description: 'A digital research resource on Dakārgalam, groundwater knowledge and the Bṛhatsaṃhitā of Varāhamihira.',
   },
 };
 
@@ -42,7 +51,6 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Literata:opsz,wght@7..72,400;700&display=swap" rel="stylesheet" />
-        <HreflangLinks />
       </head>
       <body className={cn(
         "min-h-screen bg-background font-body antialiased",

@@ -4,21 +4,24 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { BookOpen, FileText, Grid, Home, Info, Newspaper } from 'lucide-react';
+import { BookOpen, FileText, Grid, Home, Info, Menu, Newspaper } from 'lucide-react';
 import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
 import { useLocale } from '@/hooks/use-locale';
 import { LanguageToggle } from './language-toggle';
 import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from '@/components/ui/tooltip';
+  Sheet,
+  SheetClose,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from '@/components/ui/sheet';
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
-  const { t, locale } = useLocale();
+  const { t } = useLocale();
   const pathname = usePathname();
 
   useEffect(() => {
@@ -38,88 +41,83 @@ export function Header() {
     { href: '/about', icon: Info, label: t('nav.about') },
   ];
 
+  const isActive = (href: string) =>
+    (href === '/' && pathname === '/') || (href !== '/' && pathname.startsWith(href));
+
   return (
     <>
       <header
         className={cn(
-          'sticky top-0 z-50 flex h-20 items-center transition-all duration-300 bg-[hsl(var(--header-bg))] text-[hsl(var(--header-foreground))]',
+          'sticky top-0 z-50 flex h-16 items-center border-b border-white/15 transition-all duration-300 bg-[hsl(var(--header-bg))] text-[hsl(var(--header-foreground))] sm:h-20',
           isScrolled ? 'shadow-md' : ''
         )}
       >
-        <div className="container mx-auto flex max-w-7xl items-center justify-between px-4">
-          <Link href="/" className="flex items-center space-x-3" title={t('siteTitleFull')}>
+        <div className="container mx-auto flex max-w-7xl items-center justify-between gap-2 px-4">
+          <Link href="/" className="flex shrink-0 items-center gap-2 sm:gap-3" title={t('siteTitleFull')}>
             <Image
               src="/media/logo.jpg"
               alt={t('siteTitle')}
-              width={64}
-              height={64}
-              className="rounded"
+              width={56}
+              height={56}
+              className="h-10 w-10 rounded object-cover sm:h-14 sm:w-14"
             />
-            <h1 className="font-headline text-2xl font-bold tracking-tight text-white transition-colors hover:text-white/80 sm:text-3xl">
+            <span className="hidden font-headline text-2xl font-bold tracking-tight text-white transition-colors hover:text-white/80 sm:inline lg:text-3xl">
               {t('siteTitle')}
-            </h1>
+            </span>
           </Link>
 
-          <div className="flex items-center space-x-2 md:space-x-4">
-            <TooltipProvider>
-              <nav className="hidden items-center space-x-2 rounded-full border border-white/20 bg-white/10 p-1 md:flex">
-                {navItems.map(({ href, icon: Icon, label }) => {
-                  // The home icon is only for mobile
-                  if (href === '/') return null;
-                  const isActive = pathname === href;
-                  return (
-                    <Tooltip key={href}>
-                      <TooltipTrigger asChild>
-                        <Link
-                          href={href}
-                          className={cn(
-                            'flex h-9 w-9 items-center justify-center rounded-full text-white transition-colors hover:bg-white/20',
-                            isActive ? 'bg-white/20 shadow-sm' : ''
-                          )}
-                          aria-label={label}
-                        >
-                          <Icon className="h-5 w-5" />
-                        </Link>
-                      </TooltipTrigger>
-                      <TooltipContent>
-                        <p>{label}</p>
-                      </TooltipContent>
-                    </Tooltip>
-                  );
-                })}
-              </nav>
-            </TooltipProvider>
-            <LanguageToggle />
-          </div>
-        </div>
-      </header>
-
-      {/* Mobile Bottom Nav */}
-      <div className="fixed bottom-0 left-0 z-50 w-full md:hidden">
-        <nav className="border-t bg-background/95 backdrop-blur-sm">
-          <div className="mx-auto grid h-16 max-w-lg grid-cols-6 font-medium">
-            {navItems.map(({ href, icon: Icon, label }) => {
-              const isActive = (href === '/' && pathname === '/') || (href !== '/' && pathname.startsWith(href));
-              return (
+          <div className="flex items-center gap-2 sm:gap-3">
+            <nav aria-label="Primary navigation" className="hidden items-center gap-1 xl:flex">
+              {navItems.map(({ href, label }) => (
                 <Link
                   key={href}
                   href={href}
                   className={cn(
-                    "group inline-flex flex-col items-center justify-center px-1 text-center hover:bg-secondary",
-                    isActive ? "text-accent" : "text-primary"
+                    'rounded-md px-3 py-2 text-sm font-semibold text-white/90 transition-colors hover:bg-white/15 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[hsl(var(--header-bg))]',
+                    isActive(href) && 'bg-white/20 text-white'
                   )}
-                  aria-label={label}
                 >
-                  <Icon className="mb-1 h-5 w-5" />
-                  <span className="text-[10px] font-medium leading-tight transition-all group-hover:text-accent">
-                    {label}
-                  </span>
+                  {label}
                 </Link>
-              )
-            })}
+              ))}
+            </nav>
+            <LanguageToggle />
+            <Sheet>
+              <SheetTrigger asChild>
+                <button
+                  type="button"
+                  className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-md border border-white/25 text-white transition-colors hover:bg-white/15 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[hsl(var(--header-bg))] xl:hidden"
+                  aria-label="Open navigation menu"
+                >
+                  <Menu className="h-5 w-5" aria-hidden="true" />
+                </button>
+              </SheetTrigger>
+              <SheetContent side="right" className="w-[min(22rem,88vw)] border-l border-primary/15 bg-background p-6">
+                <SheetHeader className="pr-8 text-left">
+                  <SheetTitle className="font-headline text-2xl">{t('siteTitle')}</SheetTitle>
+                  <SheetDescription>{t('pages.home.subtitle')}</SheetDescription>
+                </SheetHeader>
+                <nav aria-label="Mobile navigation" className="mt-8 grid gap-2">
+                  {navItems.map(({ href, icon: Icon, label }) => (
+                    <SheetClose asChild key={href}>
+                      <Link
+                        href={href}
+                        className={cn(
+                          'flex min-h-11 items-center gap-3 rounded-md px-3 py-2 text-base font-semibold text-foreground transition-colors hover:bg-primary/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring',
+                          isActive(href) && 'bg-primary/10 text-primary'
+                        )}
+                      >
+                        <Icon className="h-5 w-5 shrink-0" aria-hidden="true" />
+                        <span>{label}</span>
+                      </Link>
+                    </SheetClose>
+                  ))}
+                </nav>
+              </SheetContent>
+            </Sheet>
           </div>
-        </nav>
-      </div>
+        </div>
+      </header>
     </>
   );
 }
