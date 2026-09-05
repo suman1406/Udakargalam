@@ -33,7 +33,7 @@ export function Header() {
   }, []);
 
   const navItems = [
-    { href: '/', icon: Home, label: t('siteTitle') },
+    { href: '/dakargalam', icon: Home, label: t('siteTitle') },
     { href: '/grantha', icon: FileText, label: t('nav.grantha') },
     { href: '/miscellaneous', icon: Grid, label: t('nav.miscellaneous') },
     { href: '/published', icon: Newspaper, label: t('nav.published') },

@@ -8,7 +8,7 @@ export function OceanHero() {
   const { t } = useLocale();
 
   return (
-    <div className="relative flex h-screen w-full items-center justify-center overflow-hidden">
+    <div className="relative flex h-[calc(100svh-4rem)] min-h-[32rem] w-full items-center justify-center overflow-hidden sm:h-[calc(100svh-5rem)]">
       <div className="absolute inset-0 z-0 bg-primary">
         <img
           src="/media/ocean-fallback.svg"

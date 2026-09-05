@@ -5,6 +5,7 @@ const siteUrl = 'https://salilargalam.in';
 export default function sitemap(): MetadataRoute.Sitemap {
   const routes = [
     { path: '', priority: 1 },
+    { path: '/dakargalam', priority: 0.9 },
     { path: '/dakargaladhyaya', priority: 0.9 },
     { path: '/grantha', priority: 0.9 },
     { path: '/published', priority: 0.8 },

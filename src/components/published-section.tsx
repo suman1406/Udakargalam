@@ -17,9 +17,9 @@ export function PublishedSection({ headingLevel = 'h1' }: PublishedSectionProps)
       <Heading className="mb-8 text-center font-headline text-4xl font-bold md:text-5xl">
         {t('pages.published.title')}
       </Heading>
-      <div className="grid grid-cols-1 justify-items-center gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      <div className="columns-1 gap-6 sm:columns-2 lg:columns-3 xl:columns-4">
         {articles.map((article) => (
-          <div key={article.id} className="w-full max-w-sm">
+          <div key={article.id} className="mb-6 break-inside-avoid">
             <ArticleCard article={article} />
           </div>
         ))}

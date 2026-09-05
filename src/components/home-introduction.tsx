@@ -40,13 +40,13 @@ export function HomeIntroduction({ headingLevel = 'h1', showActions = true }: Ho
         {showActions && (
           <div className="mt-10 flex flex-col gap-3 sm:flex-row">
             <Button asChild size="lg">
-              <a href="#grantha">
+              <a href="/grantha">
                 <BookOpenText aria-hidden="true" />
                 {t('pages.home.browseDocuments')}
               </a>
             </Button>
             <Button asChild variant="outline" size="lg" className="border-primary/30 text-primary hover:bg-primary/10">
-              <a href="#published">
+              <a href="/published">
                 <FileText aria-hidden="true" />
                 {t('pages.home.viewResearch')}
               </a>

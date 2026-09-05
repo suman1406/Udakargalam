@@ -17,9 +17,9 @@ export function MiscellaneousSection({ headingLevel = 'h1' }: MiscellaneousSecti
       <Heading className="mb-8 text-center font-headline text-4xl font-bold md:text-5xl">
         {t('pages.miscellaneous.title')}
       </Heading>
-      <div className="grid grid-cols-1 justify-items-center gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      <div className="columns-1 gap-6 sm:columns-2 lg:columns-3 xl:columns-4">
         {miscellaneousPdfs.map((pdf) => (
-          <div key={pdf.id} className="w-full max-w-sm">
+          <div key={pdf.id} className="mb-6 break-inside-avoid">
             <PdfCard pdf={pdf} />
           </div>
         ))}

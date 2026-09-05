@@ -17,9 +17,9 @@ export function GranthaSection({ headingLevel = 'h1' }: GranthaSectionProps) {
       <Heading className="mb-8 text-center font-headline text-4xl font-bold md:text-5xl">
         {t('pages.grantha.title')}
       </Heading>
-      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="columns-1 gap-6 sm:columns-2 lg:columns-3">
         {pdfs.map((pdf) => (
-          <div key={pdf.id} className="w-full">
+          <div key={pdf.id} className="mb-6 break-inside-avoid">
             <PdfCard pdf={pdf} />
           </div>
         ))}
