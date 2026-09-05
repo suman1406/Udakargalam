@@ -2,10 +2,13 @@
 'use client';
 
 import Image from 'next/image';
+import { useState } from 'react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import type { PdfInfo } from '@/lib/pdf-data';
 import { useLocale } from '@/hooks/use-locale';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
+import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible';
 import { ExternalLink } from 'lucide-react';
 
 interface PdfCardProps {
@@ -14,6 +17,7 @@ interface PdfCardProps {
 
 export function PdfCard({ pdf }: PdfCardProps) {
   const { t } = useLocale();
+  const [isDescriptionOpen, setIsDescriptionOpen] = useState(false);
   const placeholder = PlaceHolderImages.find(p => p.id === pdf.thumbId);
 
   if (!placeholder) {
@@ -45,7 +49,23 @@ export function PdfCard({ pdf }: PdfCardProps) {
         </CardHeader>
         <CardContent className="flex flex-col gap-4 p-5">
           <CardTitle className="font-headline text-lg">{t(`pdfs.${pdf.localeKey}.label`)}</CardTitle>
-          <p className="text-sm leading-6 text-muted-foreground">{t(`pdfs.${pdf.localeKey}.description`)}</p>
+          <Collapsible open={isDescriptionOpen} onOpenChange={setIsDescriptionOpen}>
+            {!isDescriptionOpen && (
+              <p className="max-h-12 overflow-hidden text-sm leading-6 text-muted-foreground">
+                {t(`pdfs.${pdf.localeKey}.description`)}
+              </p>
+            )}
+            <CollapsibleContent>
+              <p className="text-sm leading-6 text-muted-foreground">
+                {t(`pdfs.${pdf.localeKey}.description`)}
+              </p>
+            </CollapsibleContent>
+            <CollapsibleTrigger asChild>
+              <Button variant="link" size="sm" className="h-auto self-start px-0 py-1 text-primary">
+                {isDescriptionOpen ? 'Show less' : 'Read more'}
+              </Button>
+            </CollapsibleTrigger>
+          </Collapsible>
           <a
             href={pdf.file}
             target="_blank"
