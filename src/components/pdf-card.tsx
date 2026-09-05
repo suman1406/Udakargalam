@@ -61,7 +61,11 @@ export function PdfCard({ pdf }: PdfCardProps) {
               </p>
             </CollapsibleContent>
             <CollapsibleTrigger asChild>
-              <Button variant="link" size="sm" className="h-auto self-start px-0 py-1 text-primary">
+              <Button
+                variant="outline"
+                size="sm"
+                className="mt-1 h-9 self-start rounded-full border-primary/40 bg-primary/10 px-3 font-semibold text-primary shadow-sm hover:bg-primary hover:text-primary-foreground"
+              >
                 {isDescriptionOpen ? t('common.showLess') : t('common.readMore')}
               </Button>
             </CollapsibleTrigger>
@@ -70,7 +74,7 @@ export function PdfCard({ pdf }: PdfCardProps) {
             href={pdf.file}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex min-h-10 items-center justify-center gap-2 self-start rounded-md bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+            className="inline-flex min-h-10 items-center justify-center gap-2 self-start rounded-full bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground shadow-sm transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
           >
             {t('common.readPdf')} <ExternalLink className="h-4 w-4" aria-hidden="true" />
           </a>
