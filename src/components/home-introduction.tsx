@@ -6,9 +6,10 @@ import { Button } from '@/components/ui/button';
 
 type HomeIntroductionProps = {
   headingLevel?: 'h1' | 'h2';
+  showActions?: boolean;
 };
 
-export function HomeIntroduction({ headingLevel = 'h1' }: HomeIntroductionProps) {
+export function HomeIntroduction({ headingLevel = 'h1', showActions = true }: HomeIntroductionProps) {
   const { t } = useLocale();
   const Heading = headingLevel;
   const paragraphs = [
@@ -36,20 +37,22 @@ export function HomeIntroduction({ headingLevel = 'h1' }: HomeIntroductionProps)
           {paragraphs.map((key) => <p key={key}>{t(key)}</p>)}
         </div>
 
-        <div className="mt-10 flex flex-col gap-3 sm:flex-row">
-          <Button asChild size="lg">
-            <a href="#grantha">
-              <BookOpenText aria-hidden="true" />
-              {t('pages.home.browseDocuments')}
-            </a>
-          </Button>
-          <Button asChild variant="outline" size="lg" className="border-primary/30 text-primary hover:bg-primary/10">
-            <a href="#published">
-              <FileText aria-hidden="true" />
-              {t('pages.home.viewResearch')}
-            </a>
-          </Button>
-        </div>
+        {showActions && (
+          <div className="mt-10 flex flex-col gap-3 sm:flex-row">
+            <Button asChild size="lg">
+              <a href="#grantha">
+                <BookOpenText aria-hidden="true" />
+                {t('pages.home.browseDocuments')}
+              </a>
+            </Button>
+            <Button asChild variant="outline" size="lg" className="border-primary/30 text-primary hover:bg-primary/10">
+              <a href="#published">
+                <FileText aria-hidden="true" />
+                {t('pages.home.viewResearch')}
+              </a>
+            </Button>
+          </div>
+        )}
       </div>
     </section>
   );

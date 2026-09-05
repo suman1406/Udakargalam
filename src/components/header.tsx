@@ -4,7 +4,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { BookOpen, FileText, Grid, Home, Info, Menu, Newspaper } from 'lucide-react';
+import { FileText, Grid, Home, Info, Menu, Newspaper } from 'lucide-react';
 import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
 import { useLocale } from '@/hooks/use-locale';
@@ -34,7 +34,6 @@ export function Header() {
 
   const navItems = [
     { href: '/', icon: Home, label: t('siteTitle') },
-    { href: '/dakargaladhyaya', icon: BookOpen, label: t('nav.dakargaladhyaya') },
     { href: '/grantha', icon: FileText, label: t('nav.grantha') },
     { href: '/miscellaneous', icon: Grid, label: t('nav.miscellaneous') },
     { href: '/published', icon: Newspaper, label: t('nav.published') },
