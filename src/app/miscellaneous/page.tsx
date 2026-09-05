@@ -9,7 +9,7 @@ type MiscellaneousPageProps = {
   headingLevel?: 'h1' | 'h2';
 };
 
-export default function MiscellaneousPage({ headingLevel = 'h1' }: MiscellaneousPageProps) {
+export function MiscellaneousSection({ headingLevel = 'h1' }: MiscellaneousPageProps) {
   const { t } = useLocale();
   const Heading = headingLevel;
 
@@ -27,4 +27,8 @@ export default function MiscellaneousPage({ headingLevel = 'h1' }: Miscellaneous
       </div>
     </div>
   );
+}
+
+export default function MiscellaneousPage() {
+  return <MiscellaneousSection />;
 }

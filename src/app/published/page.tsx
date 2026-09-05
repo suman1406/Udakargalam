@@ -9,7 +9,7 @@ type PublishedPageProps = {
   headingLevel?: 'h1' | 'h2';
 };
 
-export default function PublishedPage({ headingLevel = 'h1' }: PublishedPageProps) {
+export function PublishedSection({ headingLevel = 'h1' }: PublishedPageProps) {
   const { t } = useLocale();
   const Heading = headingLevel;
 
@@ -27,4 +27,8 @@ export default function PublishedPage({ headingLevel = 'h1' }: PublishedPageProp
       </div>
     </div>
   );
+}
+
+export default function PublishedPage() {
+  return <PublishedSection />;
 }

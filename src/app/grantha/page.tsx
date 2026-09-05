@@ -9,7 +9,7 @@ type GranthaPageProps = {
   headingLevel?: 'h1' | 'h2';
 };
 
-export default function GranthaPage({ headingLevel = 'h1' }: GranthaPageProps) {
+export function GranthaSection({ headingLevel = 'h1' }: GranthaPageProps) {
   const { t } = useLocale();
   const Heading = headingLevel;
 
@@ -27,4 +27,8 @@ export default function GranthaPage({ headingLevel = 'h1' }: GranthaPageProps) {
       </div>
     </div>
   );
+}
+
+export default function GranthaPage() {
+  return <GranthaSection />;
 }

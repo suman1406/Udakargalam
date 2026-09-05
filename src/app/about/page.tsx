@@ -8,7 +8,7 @@ type AboutPageProps = {
   headingLevel?: 'h1' | 'h2';
 };
 
-export default function AboutPage({ headingLevel = 'h1' }: AboutPageProps) {
+export function AboutSection({ headingLevel = 'h1' }: AboutPageProps) {
   const { t } = useLocale();
   const Heading = headingLevel;
 
@@ -28,4 +28,8 @@ export default function AboutPage({ headingLevel = 'h1' }: AboutPageProps) {
       </Card>
     </div>
   );
+}
+
+export default function AboutPage() {
+  return <AboutSection />;
 }
