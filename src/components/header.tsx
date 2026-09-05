@@ -56,9 +56,9 @@ export function Header() {
             <Image
               src="/media/logo.jpg"
               alt={t('siteTitle')}
-              width={56}
-              height={56}
-              className="h-10 w-10 rounded object-cover sm:h-14 sm:w-14"
+              width={80}
+              height={80}
+              className="h-12 w-12 rounded-lg border border-white/45 bg-white p-1 object-contain shadow-md sm:h-16 sm:w-16"
             />
             <span className="hidden font-headline text-2xl font-bold tracking-tight text-white transition-colors hover:text-white/80 sm:inline lg:text-3xl">
               {t('siteTitle')}
