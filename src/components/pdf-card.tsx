@@ -62,9 +62,9 @@ export function PdfCard({ pdf }: PdfCardProps) {
             </CollapsibleContent>
             <CollapsibleTrigger asChild>
               <Button
-                variant="outline"
+                variant="link"
                 size="sm"
-                className="mt-1 h-9 self-start rounded-full border-[hsl(var(--header-bg)/0.4)] bg-[hsl(var(--header-bg)/0.08)] px-3 font-semibold text-[hsl(var(--header-bg))] shadow-sm hover:bg-[hsl(var(--header-bg))] hover:text-white"
+                className="mt-1 h-auto self-start p-0 font-semibold text-[hsl(var(--header-bg))] underline-offset-4 hover:underline"
               >
                 {isDescriptionOpen ? t('common.showLess') : t('common.readMore')}
               </Button>
