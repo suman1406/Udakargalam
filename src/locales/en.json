@@ -4,6 +4,9 @@
   "footer": {
     "copyright": "© 2025 salilargalam.in. All rights reserved."
   },
+  "common": {
+    "readPdf": "Read PDF"
+  },
   "nav": {
     "dakargaladhyaya": "Dakargala",
     "grantha": "Grantha",
@@ -13,7 +16,18 @@
   },
   "pages": {
     "home": {
-      "title": "UDAKARGALAM"
+      "eyebrow": "India’s traditional knowledge on groundwater",
+      "title": "Dakārgalam",
+      "subtitle": "India’s Traditional Knowledge on Groundwater",
+      "browseDocuments": "Browse documents",
+      "viewResearch": "View research",
+      "introduction": {
+        "one": "Dakārgalam is a classical Indian knowledge tradition concerned with the search for water hidden beneath the earth. The word is formed from daka, meaning water, and argala, meaning a bolt, bar, or fastening. The title therefore evokes water concealed or held within the earth, together with the knowledge required to recognise and locate it.",
+        "two": "Sanskrit has many words for water, including daka, udaka, jala, salila, toya and vāri. This rich vocabulary reflects the importance of water in Indian knowledge traditions. Dakārgalam and Salilārgalam may be understood as names conveying the same water-related knowledge tradition. The central concern of Dakargalam is the identification of groundwater through natural signs.",
+        "three": "Dakargalam is a chapter of the Bṛhatsaṃhitā of Varāhamihira, the celebrated sixth-century Indian scholar. Varāhamihira was versed in the three branches of Jyotiṣam and possessed wide learning in many other fields. The Bṛhatsaṃhitā is his extensive Sanskrit compendium, traditionally transmitted in 106 chapters. It discusses celestial phenomena, clouds, rainfall, winds, atmospheric signs, regional divisions, architecture, water sources, plants, animals, gems, and several social and cultural subjects.",
+        "four": "The Dakārgalam chapter explains how groundwater may be identified through the observation of landforms, soil, trees, vegetation, termite mounds and other natural features. It presents water not as an isolated resource, but as part of an interconnected environment involving land, plants, climate, animals and human life.",
+        "five": "Dakārgalam is not an alternative to modern groundwater science. Rather, it offers an important basis for examining traditional environmental knowledge alongside modern hydrology. Salilargalam.in brings together Sanskrit texts, multilingual editions, research articles and supporting materials to make this valuable knowledge tradition accessible to scholars, students and the wider public."
+      }
     },
     "dakargaladhyaya": {
       "title": "Dakargaladhyaya",
@@ -37,48 +51,48 @@
   },
   "pdfs": {
     "samskrita": {
-      "label": "Samskrita",
-      "description": "Ocean waves on a sandy beach."
+      "label": "Sanskrit — Bṛhatsaṃhitā with Bhaṭṭotpala’s Commentary",
+      "description": "A Sanskrit edition of Varāhamihira’s Bṛhatsaṃhitā accompanied by the celebrated commentary of Bhaṭṭotpala, one of the important traditional interpreters of the text. The edition provides access to the original Sanskrit verses together with traditional explanations that help clarify their meaning and context. It is a primary resource for studying Varāhamihira’s observations on astronomy, meteorology, rainfall, water, natural phenomena, architecture and other subjects, including the material relevant to Jalārgaḷaśāstra/Dakārgaḷa."
     },
     "hindi": {
-      "label": "Hindi",
-      "description": "Ancient manuscript with Hindi script."
+      "label": "Hindi — Bṛhatsaṃhitā with Hindi Translation",
+      "description": "A Hindi translation of Varāhamihira’s Bṛhatsaṃhitā by Baladeva Prasād Miśra, providing access to this extensive Sanskrit compendium for Hindi readers. The translation helps readers explore Varāhamihira’s discussions of astronomy, weather, rainfall, natural signs, water resources, architecture and various aspects of human life. For the present project, it provides an important regional-language resource for understanding and studying the traditional observations and water-related knowledge preserved in the Bṛhatsaṃhitā."
     },
     "english": {
-      "label": "English",
-      "description": "An old book with English text."
-    },
-    "kannada": {
-      "label": "Lokopakaram",
-      "description": "Ancient manuscript of Lokopakaram in Kannada."
+      "label": "English — Bṛhatsaṃhitā: English Translation, Notes and Literary Comments",
+      "description": "Part Two of the English translation of Varāhamihira’s Bṛhatsaṃhitā by M. Ramakrishna Bhat, with explanatory notes and literary comments. Bhat’s translation provides wider access to the contents of this important Sanskrit work and assists students and researchers in examining its diverse observations and technical discussions. It is particularly useful for comparative study alongside the Sanskrit text and regional-language translations, including the portions dealing with nature, rainfall, environmental signs and traditional water-resource knowledge. Bhat’s English edition is widely catalogued as a translation with notes."
     },
     "lokopakaram": {
-      "label": "Kannada",
-      "description": "Palm leaf manuscript with Kannada writing."
+      "label": "Lōkōpakāram — Critical Edition",
+      "description": "A critical edition of Lōkōpakāram, the classical Kannada work attributed to Cāvuṇḍarāya, edited by H. Sesha Iyengar with an introduction. The work is an important comparative source for the study of traditional practical knowledge, covering subjects such as natural signs, architecture, agriculture, plants, medicine, astrology and, notably, water divining. Its chapter on locating underground water through plants and natural phenomena makes it especially relevant to comparative research on Dakārgaḷa/Jalārgaḷaśāstra and traditional approaches to water-resource identification."
+    },
+    "kannada": {
+      "label": "Kannada — Bṛhatsaṃhitā: A Classical Foundational Text of Astrology",
+      "description": "A Kannada-language presentation of Varāhamihira’s Bṛhatsaṃhitā by Dr. Śrīpāda Raghunātha Kulkarṇi. It introduces the significance of this wide-ranging classical work within the broader tradition of Jyotiṣa, while making its contents accessible to Kannada readers. The edition provides an additional regional-language resource for examining Varāhamihira’s treatment of astronomy, natural phenomena, environmental observations and related knowledge traditions. Its availability in Kannada also supports comparative study and wider dissemination of the project's research material."
     },
     "marathi": {
-      "label": "Marathi",
-      "description": "A traditional Marathi scroll."
+      "label": "Marathi — The Bṛhat Saṃhitā with Marathi Translation",
+      "description": "A Marathi translation of Varāhamihira’s Bṛhatsaṃhitā by K. Janārdan Hari Āṭhālye, making the classical Sanskrit work accessible to Marathi readers. The translation opens the text to readers interested in its astronomical, environmental, scientific and cultural dimensions, including its observations concerning weather, rainfall, natural phenomena and water. As part of the project's multilingual resource collection, it provides an important basis for comparing interpretations across Indian languages and for bringing traditional knowledge of the Bṛhatsaṃhitā to a wider audience."
     },
     "bengali": {
-      "label": "Bengali",
-      "description": "Ornate Bengali calligraphy."
+      "label": "Bengali — Bṛhatsaṃhitā: Bengali Translation",
+      "description": "A Bengali translation of Varāhamihira’s Bṛhatsaṃhitā, edited by Pañcānana Tarkaratna and translated by Dhirānanda Kābyanidhi. This edition provides Bengali readers with access to one of the major Sanskrit compendia of classical India and its wide-ranging discussions of astronomy, nature, weather, rainfall, human life and traditional knowledge. It forms an important part of the project's multilingual collection, enabling comparative engagement with the Bṛhatsaṃhitā and supporting the wider dissemination of research on its environmental and water-related observations."
     },
     "malayalam": {
-      "label": "Malayalam",
-      "description": "A book with Malayalam script."
+      "label": "Malayalam — Bṛhatsaṃhitā / Varāhīsaṃhitā with Ratnaprabhā Commentary",
+      "description": "A Malayalam interpretation of Varāhamihira’s Bṛhatsaṃhitā, prepared by P. S. Purushothaman Namboothiri and accompanied by the Ratnaprabhā commentary. The resource provides Malayalam readers with an accessible entry into the classical text together with a traditional explanatory framework. It is valuable for studying the broader range of subjects treated by Varāhamihira and, in the context of this project, for comparative examination of traditional interpretations relating to nature, environmental phenomena, rainfall and water-resource knowledge."
     },
     "tamil": {
-      "label": "Tamil",
-      "description": "A book with Tamil script."
+      "label": "Tamil — Kadalangudi’s Bṛhatsaṃhitā: Environmental Astronomy",
+      "description": "Part Two of Kadalangudi’s Tamil study of Varāhamihira’s Bṛhatsaṃhitā, focusing particularly on nature, astronomy and environmental observation. The Kadalangudi tradition presents the text in a form accessible to Tamil readers and draws attention to its observations concerning celestial phenomena and the natural environment. This resource is especially useful for understanding the relationship between astronomical observation and environmental knowledge in the Bṛhatsaṃhitā, and for placing its discussions of rainfall, natural signs and water within a broader traditional knowledge framework. The Kadalangudi publication is associated with K. N. Saraswathy."
     },
     "brhatsamhitaMulaSloka": {
       "label": "Mūlaślokāḥ – Udakārgala-adhyāyaḥ",
       "description": "Bibliotheca Indica Brhatsamhita Mula sloka edition."
     },
     "telugu": {
-      "label": "Telugu",
-      "description": "A book with Telugu script."
+      "label": "Telugu — Bṛhatsaṃhitā of Varāhamihira",
+      "description": "A Telugu edition of Varāhamihira’s Bṛhatsaṃhitā by Dr. M. Vishwanatha Raju, making this important Sanskrit work accessible to Telugu readers. The resource provides an opportunity to engage with the text and its wider knowledge traditions, including Jyotiṣa, Vāstu, astronomy, natural observations and environmental phenomena. As part of the project's multilingual collection, it supports comparative study of the Bṛhatsaṃhitā and helps extend the project's research and documentation on traditional water-resource knowledge to Telugu-speaking readers."
     }
   },
   "languageToggle": {

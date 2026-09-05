@@ -1,6 +1,5 @@
-import { OceanHero } from '@/components/ocean-hero';
+import { HomeIntroduction } from '@/components/home-introduction';
 import AboutPage from './about/page';
-import DakargaladhyayaPage from './dakargaladhyaya/page';
 import GranthaPage from './grantha/page';
 import MiscellaneousPage from './miscellaneous/page';
 import PublishedPage from './published/page';
@@ -8,13 +7,12 @@ import PublishedPage from './published/page';
 export default function Home() {
   return (
     <div className="relative">
-      <OceanHero />
+      <HomeIntroduction />
       <div className="space-y-16 py-16">
-        <DakargaladhyayaPage />
-        <GranthaPage />
-        <PublishedPage />
-        <MiscellaneousPage />
-        <AboutPage />
+        <section id="grantha"><GranthaPage /></section>
+        <section id="published"><PublishedPage /></section>
+        <section id="miscellaneous"><MiscellaneousPage /></section>
+        <section id="about"><AboutPage /></section>
       </div>
     </div>
   );
