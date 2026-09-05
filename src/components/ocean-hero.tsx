@@ -10,7 +10,7 @@ export function OceanHero() {
 
   return (
     <section className="w-full overflow-hidden bg-slate-950">
-      <div className="relative aspect-[3/2] w-full overflow-hidden sm:h-[calc(100svh-11rem)] sm:min-h-[26rem] sm:aspect-auto">
+      <div className="relative aspect-[3/2] w-full overflow-hidden sm:h-[calc(100svh-17rem)] sm:min-h-[26rem] sm:aspect-auto">
         <Image
           src="/media/dakargalam-hero.jpg"
           alt=""
