@@ -9,24 +9,24 @@ export function OceanHero() {
   const { t } = useLocale();
 
   return (
-    <div className="relative flex h-[calc(100svh-4rem)] min-h-[32rem] w-full items-center justify-center overflow-hidden sm:h-[calc(100svh-5rem)]">
-      <div className="absolute inset-0 z-0 bg-primary">
+    <div className="relative flex aspect-[3/2] w-full items-end justify-center overflow-hidden bg-slate-950 sm:h-[calc(100svh-5rem)] sm:min-h-[32rem] sm:aspect-auto sm:items-center">
+      <div className="absolute inset-0 z-0">
         <Image
-          src="/media/groundwater-hero.png"
+          src="/media/dakargalam-hero.jpg"
           alt=""
           fill
           priority
           sizes="100vw"
-          className="object-cover object-center"
+          className="object-contain object-center sm:object-cover"
         />
       </div>
 
-      <div className="absolute inset-0 z-10 bg-slate-950/45"></div>
+      <div className="absolute inset-0 z-10 bg-slate-950/15 sm:bg-slate-950/45"></div>
 
-      <div className="relative z-20 flex flex-col items-center px-4 text-center">
+      <div className="relative z-20 mb-5 flex flex-col items-center px-4 text-center sm:mb-0">
         <h1
           className={cn(
-            'font-headline text-5xl font-bold text-white drop-shadow-lg md:text-7xl lg:text-8xl',
+            'font-headline text-3xl font-bold text-white drop-shadow-lg sm:text-5xl md:text-7xl lg:text-8xl',
             'animate-fade-in'
           )}
         >
