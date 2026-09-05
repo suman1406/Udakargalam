@@ -9,6 +9,18 @@
     "readMore": "Read more",
     "showLess": "Show less"
   },
+  "errors": {
+    "notFoundTitle": "This page could not be found.",
+    "notFoundDescription": "The page may have moved, or the address may be incorrect. You can return to the project home or browse the document collection.",
+    "returnHome": "Return to home",
+    "browseDocuments": "Browse documents",
+    "unableToLoad": "Unable to load page",
+    "somethingWentWrong": "Something went wrong.",
+    "errorDescription": "Please try again. If the problem continues, return to the project home and continue from there.",
+    "tryAgain": "Try again",
+    "siteError": "Site error",
+    "globalErrorDescription": "Please refresh the page or return to the project home."
+  },
   "nav": {
     "dakargaladhyaya": "Dakargala",
     "grantha": "Grantha",
