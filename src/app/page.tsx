@@ -1,8 +1,8 @@
 import { HomeIntroduction } from '@/components/home-introduction';
-import { AboutSection } from './about/page';
-import { GranthaSection } from './grantha/page';
-import { MiscellaneousSection } from './miscellaneous/page';
-import { PublishedSection } from './published/page';
+import { AboutSection } from '@/components/about-section';
+import { GranthaSection } from '@/components/grantha-section';
+import { MiscellaneousSection } from '@/components/miscellaneous-section';
+import { PublishedSection } from '@/components/published-section';
 
 export default function Home() {
   return (
