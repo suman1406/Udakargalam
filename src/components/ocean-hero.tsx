@@ -3,29 +3,25 @@
 
 import { useLocale } from '@/hooks/use-locale';
 import { cn } from '@/lib/utils';
-import Image from 'next/image';
 
 export function OceanHero() {
   const { t } = useLocale();
 
   return (
     <div className="relative flex h-screen w-full items-center justify-center overflow-hidden">
-      <div className="absolute inset-0 z-0">
-        {/* Fallback for browsers that don't support video or for reduced motion */}
-        <div className="h-full w-full bg-primary object-cover motion-safe:hidden">
-            <img src="/media/ocean-fallback.svg" alt="" className="h-full w-full object-cover" />
-        </div>
-        <div className="h-full w-full bg-primary object-cover motion-reduce:block hidden">
-            <img src="/media/ocean-fallback.svg" alt="" className="h-full w-full object-cover" />
-        </div>
-
-        {/* Video for browsers that support it and user has not preferred reduced motion */}
+      <div className="absolute inset-0 z-0 bg-primary">
+        <img
+          src="/media/ocean-fallback.svg"
+          alt=""
+          className="absolute inset-0 hidden h-full w-full object-cover motion-reduce:block"
+        />
         <video
           autoPlay
           loop
           muted
           playsInline
-          className="h-full w-full object-cover motion-reduce:hidden"
+          poster="/media/ocean-fallback.svg"
+          className="absolute inset-0 h-full w-full object-cover motion-reduce:hidden"
           aria-hidden="true"
         >
           <source src="/media/video.mp4" type="video/mp4" />
@@ -34,7 +30,7 @@ export function OceanHero() {
 
       <div className="absolute inset-0 z-10 bg-black/30"></div>
 
-      <div className="relative z-20 flex flex-col items-center text-center">
+      <div className="relative z-20 flex flex-col items-center px-4 text-center">
         <h1
           className={cn(
             'font-headline text-5xl font-bold text-white drop-shadow-lg md:text-7xl lg:text-8xl',

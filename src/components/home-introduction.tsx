@@ -2,9 +2,15 @@
 
 import { BookOpenText, FileText } from 'lucide-react';
 import { useLocale } from '@/hooks/use-locale';
+import { Button } from '@/components/ui/button';
 
-export function HomeIntroduction() {
+type HomeIntroductionProps = {
+  headingLevel?: 'h1' | 'h2';
+};
+
+export function HomeIntroduction({ headingLevel = 'h1' }: HomeIntroductionProps) {
   const { t } = useLocale();
+  const Heading = headingLevel;
   const paragraphs = [
     'pages.home.introduction.one',
     'pages.home.introduction.two',
@@ -19,9 +25,9 @@ export function HomeIntroduction() {
         <p className="mb-4 font-headline text-sm font-semibold tracking-[0.18em] text-primary uppercase">
           {t('pages.home.eyebrow')}
         </p>
-        <h1 className="max-w-3xl font-headline text-4xl font-bold tracking-tight text-foreground md:text-6xl">
+        <Heading className="max-w-3xl font-headline text-4xl font-bold tracking-tight text-foreground md:text-6xl">
           {t('pages.home.title')}
-        </h1>
+        </Heading>
         <p className="mt-4 max-w-2xl font-headline text-xl text-muted-foreground md:text-2xl">
           {t('pages.home.subtitle')}
         </p>
@@ -31,20 +37,18 @@ export function HomeIntroduction() {
         </div>
 
         <div className="mt-10 flex flex-col gap-3 sm:flex-row">
-          <a
-            href="#grantha"
-            className="inline-flex min-h-11 items-center justify-center gap-2 rounded-md bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
-          >
-            <BookOpenText className="h-4 w-4" aria-hidden="true" />
-            {t('pages.home.browseDocuments')}
-          </a>
-          <a
-            href="#published"
-            className="inline-flex min-h-11 items-center justify-center gap-2 rounded-md border border-primary/30 bg-background px-5 py-3 text-sm font-semibold text-primary transition-colors hover:bg-primary/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
-          >
-            <FileText className="h-4 w-4" aria-hidden="true" />
-            {t('pages.home.viewResearch')}
-          </a>
+          <Button asChild size="lg">
+            <a href="#grantha">
+              <BookOpenText aria-hidden="true" />
+              {t('pages.home.browseDocuments')}
+            </a>
+          </Button>
+          <Button asChild variant="outline" size="lg" className="border-primary/30 text-primary hover:bg-primary/10">
+            <a href="#published">
+              <FileText aria-hidden="true" />
+              {t('pages.home.viewResearch')}
+            </a>
+          </Button>
         </div>
       </div>
     </section>
