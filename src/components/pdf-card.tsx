@@ -64,7 +64,7 @@ export function PdfCard({ pdf }: PdfCardProps) {
               <Button
                 variant="outline"
                 size="sm"
-                className="mt-1 h-9 self-start rounded-full border-primary/40 bg-primary/10 px-3 font-semibold text-primary shadow-sm hover:bg-primary hover:text-primary-foreground"
+                className="mt-1 h-9 self-start rounded-full border-[hsl(var(--header-bg)/0.4)] bg-[hsl(var(--header-bg)/0.08)] px-3 font-semibold text-[hsl(var(--header-bg))] shadow-sm hover:bg-[hsl(var(--header-bg))] hover:text-white"
               >
                 {isDescriptionOpen ? t('common.showLess') : t('common.readMore')}
               </Button>
