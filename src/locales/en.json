@@ -5,7 +5,9 @@
     "copyright": "© 2025 salilargalam.in. All rights reserved."
   },
   "common": {
-    "readPdf": "Read PDF"
+    "readPdf": "Read PDF",
+    "readMore": "Read more",
+    "showLess": "Show less"
   },
   "nav": {
     "dakargaladhyaya": "Dakargala",

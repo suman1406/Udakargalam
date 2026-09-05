@@ -62,7 +62,7 @@ export function PdfCard({ pdf }: PdfCardProps) {
             </CollapsibleContent>
             <CollapsibleTrigger asChild>
               <Button variant="link" size="sm" className="h-auto self-start px-0 py-1 text-primary">
-                {isDescriptionOpen ? 'Show less' : 'Read more'}
+                {isDescriptionOpen ? t('common.showLess') : t('common.readMore')}
               </Button>
             </CollapsibleTrigger>
           </Collapsible>
