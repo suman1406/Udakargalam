@@ -53,13 +53,23 @@ export function Header() {
       >
         <div className="container mx-auto flex max-w-7xl items-center justify-between gap-2 px-4">
           <Link href="/" className="flex shrink-0 items-center gap-2 sm:gap-3" title={t('siteTitleFull')}>
-            <Image
-              src="/media/logo.jpg"
-              alt={t('siteTitle')}
-              width={80}
-              height={80}
-              className="h-12 w-12 rounded-lg border border-white/45 bg-white p-1 object-contain shadow-md sm:h-16 sm:w-16"
-            />
+            <div className="flex items-center gap-1 rounded-lg bg-white p-1 shadow-md ring-1 ring-white/35">
+              <Image
+                src="/media/central-sanskrit-university.png"
+                alt="Central Sanskrit University"
+                width={640}
+                height={640}
+                className="h-10 w-10 rounded object-contain sm:h-14 sm:w-14"
+              />
+              <span aria-hidden="true" className="h-8 w-px bg-[hsl(var(--header-bg))]/35 sm:h-12" />
+              <Image
+                src="/media/amrita-vishwa-vidyapeetham.png"
+                alt="Amrita Vishwa Vidyapeetham"
+                width={640}
+                height={640}
+                className="h-10 w-10 rounded object-contain sm:h-14 sm:w-14"
+              />
+            </div>
             <span className="hidden font-headline text-2xl font-bold tracking-tight text-white transition-colors hover:text-white/80 sm:inline lg:text-3xl">
               {t('siteTitle')}
             </span>
