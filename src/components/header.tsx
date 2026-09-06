@@ -1,7 +1,6 @@
 
 'use client';
 
-import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { FileText, Grid, Home, Info, Menu, Newspaper } from 'lucide-react';
@@ -20,17 +19,8 @@ import {
 } from '@/components/ui/sheet';
 
 export function Header() {
-  const [isScrolled, setIsScrolled] = useState(false);
   const { t } = useLocale();
   const pathname = usePathname();
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   const navItems = [
     { href: '/dakargalam', icon: Home, label: t('pages.home.title') },
@@ -47,30 +37,29 @@ export function Header() {
     <>
       <header
         className={cn(
-          'sticky top-0 z-50 flex h-16 items-center border-b border-white/15 transition-all duration-300 bg-[hsl(var(--header-bg))] text-[hsl(var(--header-foreground))] sm:h-20',
-          isScrolled ? 'shadow-md' : ''
+          'relative z-50 flex h-14 items-center border-b border-white/15 bg-[hsl(var(--header-bg))] text-[hsl(var(--header-foreground))] sm:h-16'
         )}
       >
         <div className="container mx-auto flex max-w-7xl items-center justify-between gap-2 px-4">
           <Link href="/" className="flex shrink-0 items-center gap-2 sm:gap-3" title={t('siteTitleFull')}>
-            <div className="flex items-center gap-1 rounded-lg bg-white p-1 shadow-md ring-1 ring-white/35">
+            <div className="flex items-center gap-1 rounded-md bg-white p-1 shadow-sm ring-1 ring-white/35">
               <Image
                 src="/media/central-sanskrit-university.png"
                 alt="Central Sanskrit University"
                 width={640}
                 height={640}
-                className="h-10 w-10 rounded object-contain sm:h-14 sm:w-14"
+                className="h-8 w-8 rounded object-contain sm:h-10 sm:w-10"
               />
-              <span aria-hidden="true" className="h-8 w-px bg-[hsl(var(--header-bg))]/35 sm:h-12" />
+              <span aria-hidden="true" className="h-7 w-px bg-[hsl(var(--header-bg))]/35 sm:h-8" />
               <Image
                 src="/media/amrita-vishwa-vidyapeetham.png"
                 alt="Amrita Vishwa Vidyapeetham"
                 width={640}
                 height={640}
-                className="h-10 w-10 rounded object-contain sm:h-14 sm:w-14"
+                className="h-8 w-8 rounded object-contain sm:h-10 sm:w-10"
               />
             </div>
-            <span className="hidden font-headline text-2xl font-bold tracking-tight text-white transition-colors hover:text-white/80 sm:inline lg:text-3xl">
+            <span className="hidden font-headline text-xl font-bold tracking-tight text-white transition-colors hover:text-white/80 sm:inline lg:text-2xl">
               {t('siteTitle')}
             </span>
           </Link>
@@ -82,7 +71,7 @@ export function Header() {
                   key={href}
                   href={href}
                   className={cn(
-                    'rounded-md px-3 py-2 text-sm font-semibold text-white/90 transition-colors hover:bg-white/15 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[hsl(var(--header-bg))]',
+                    'rounded-md px-2.5 py-1.5 text-sm font-semibold text-white/90 transition-colors hover:bg-white/15 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[hsl(var(--header-bg))]',
                     isActive(href) && 'bg-white/20 text-white'
                   )}
                 >
@@ -95,10 +84,10 @@ export function Header() {
               <SheetTrigger asChild>
                 <button
                   type="button"
-                  className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-md border border-white/25 text-white transition-colors hover:bg-white/15 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[hsl(var(--header-bg))] xl:hidden"
+                  className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-md border border-white/25 text-white transition-colors hover:bg-white/15 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[hsl(var(--header-bg))] xl:hidden"
                   aria-label="Open navigation menu"
                 >
-                  <Menu className="h-5 w-5" aria-hidden="true" />
+                  <Menu className="h-4 w-4" aria-hidden="true" />
                 </button>
               </SheetTrigger>
               <SheetContent side="right" className="w-[min(22rem,88vw)] border-l border-primary/15 bg-background p-6">
