@@ -11,7 +11,7 @@ export function OceanHero() {
     <section className="relative isolate flex aspect-[1916/821] items-center justify-center overflow-hidden bg-slate-950 sm:min-h-[calc(100svh-5rem)] sm:aspect-auto">
       <div className="absolute inset-0">
         <Image
-          src="/media/dakargalam-hero.png"
+          src="/media/dakargalam-groundwater-hero.png"
           alt=""
           fill
           priority
